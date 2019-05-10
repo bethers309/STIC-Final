@@ -1,0 +1,13 @@
+{{#each data}}
+<article>
+    <hr>
+    <div class = "content">
+        <h3 class="name">{{this.name}}</h3>
+        <p> Type: {{this.type}}</p>
+        <p>Toppings: {{this.toppings}}</p>
+        <p>{{this.ice}}% Ice</p>
+        <p>{{this.sugar}}% Sugar</p>
+        <p>Flavor: {{this.flavor}}</p>
+        <p class="ids">ID: {{this.id}}</p>
+</article>
+{{/each}}

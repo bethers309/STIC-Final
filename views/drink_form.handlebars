@@ -1,0 +1,19 @@
+<form method='POST' action='/drinks'>
+    <h3>Name: <input type="text" name="name" required> <br> </h3>
+    <h3>Type: </h3> <select name="type"> 
+        {{#each types}} 
+        <option value="{{{this}}}"> {{{this}}}</option>
+        {{/each}}
+        </select>
+    <h3>Toppings: </h3> <select name="topping" multiple> 
+        {{#each toppings}} 
+        <option value="{{{this}}}"> {{{this}}}</option>
+        {{/each}}</select>
+    <h3>Flavor: </h3> <select name="flavor"> 
+        {{#each flavors}} 
+        <option value="{{{this}}}"> {{{this}}}</option>
+        {{/each}} </select>
+    <h3>Ice: </h3> <input type="range" name="ice" min="0" max="3">
+    <h3>Sugar: </h3> <input type="range" name="sugar" min="0" max="6">
+    <input type="submit" value="SUBMIT">
+</form>

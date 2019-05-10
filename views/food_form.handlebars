@@ -1,0 +1,11 @@
+<form method='POST' action='/food'>
+    <h3>Name: <input type="text" name="name" required> <br> </h3>
+    <h3>Type: </h3> <select name="type"> 
+        {{#each types}} 
+        <option value="{{{this}}}"> {{{this}}}</option>
+        {{/each}} </select>
+    <h3>Ingredients: <input type="text" name="ingredients" required> <br> </h3>
+    <h3>Price: $<input type="text" name="price" required> <br> </h3>
+    <h3>Picture URL: <input type="text" name="pic" required> <br> </h3>
+    <input type="submit" value="SUBMIT">
+</form>

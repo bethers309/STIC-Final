@@ -1,0 +1,16 @@
+<article>
+    <hr>
+    <a class="link" id="foodform" href="foodform"> Add a food item! </a>
+    {{#each data}}
+    <article>
+        <div class="content">
+            <h3 class="name">{{this.name}}</h2>
+            <p> Type: {{this.type}}</p>
+            <p> Price: ${{this.price}}</p>
+            <p>Made of {{this.ingredients}}</p>
+            <img float="right" src={{this.picture}} height="300" alt>
+            <p class="ids">ID: {{this.id}}</p>
+    </article>
+    <hr>
+    {{/each}}
+</article>
